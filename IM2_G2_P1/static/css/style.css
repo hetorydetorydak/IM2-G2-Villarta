@@ -1,0 +1,98 @@
+:root {
+  --login-background: #FFFAFA;
+  --login-primary-text: #2E2E2E;
+  --login-secondary-text: #6E6E6E;
+  --login-accent: #A8C0C6;
+  --login-highlight: #F4E4E1;
+  --login-border: #EAEAEA;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--login-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: #fff;
+  border: 1px solid var(--login-border);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  color: var(--login-primary-text);
+}
+
+.subtitle {
+  margin: 0.5rem 0 1.5rem;
+  color: var(--login-secondary-text);
+  font-size: 0.9rem;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--login-primary-text);
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--login-border);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--login-primary-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: var(--login-accent);
+  box-shadow: 0 0 0 2px rgba(168, 192, 198, 0.2);
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-btn {
+  background-color: var(--login-accent);
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #96B4BB;
+}
+
+.signup-btn {
+  background-color: var(--login-highlight);
+  color: var(--login-primary-text);
+  border: 1px solid var(--login-border);
+}
+
+.signup-btn:hover {
+  background-color: #EEDDD9;
+}
